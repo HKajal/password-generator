@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .pswrd{
+            height: 250px;
+            width: 300px;
+            /* border: 1px solid black; */
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.951);
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px lightcoral;
+        }
+        h1{
+            color: white;
+            position: absolute;
+            margin-top: -180px;
+            text-decoration: underline;
+        }
+        input{
+            height: 50px;
+            background-color: lightgreen;
+            color: black;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+        }
+        button{
+            height: 40px;
+            width: 80px;
+            position: absolute;
+            margin-top: 150px;
+            background-color: green;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            color: aliceblue;
+            box-shadow: inset 5px 5px 5px lightgreen;
+        }
+        .fa-solid{
+            margin-left: 150px;
+            margin-top: 3px;
+            position: absolute;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pswrd">
+        <h1>Password Generator</h1>
+    <input type="text" id="password" name="password">
+    <i class="fa-solid fa-copy" id="cpb"></i>
+    <button id="btn">password</button>
+    </div>
+    <script src="action.js"></script>
+</body>
+</html>
